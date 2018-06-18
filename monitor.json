@@ -1,0 +1,10 @@
+{
+    "Endpoint":"address to the vdc that should be monitored (caf)",
+    "ElasticSearchURL":"elastic search address (ip or dns) with port",
+    "VDCName":"VDC-Identifier used as name in elastic search",
+    "Opentracing":false,
+    "ZipkinEndpoint":"address of zipkin collector",
+    "UseSelfSigned":true,
+    "ForwardTraffic":false,
+    "ExchangeReporterURL":"forward endpoint all collected data traffic will be forwarded to this address"
+}
