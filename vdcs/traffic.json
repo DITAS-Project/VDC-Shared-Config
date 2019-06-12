@@ -1,7 +1,7 @@
 {
-    "ElasticSearchURL":"{{ elasticsearch_url }}",
-    "VDCName":"VDC-Identifier used as name in elastic search",
+    "ElasticSearchURL":"{{.elasticsearch_url}}",
+    "VDCName":"{{.vdcId}}",
     "windowTime":10,
-    "ignore":["regex sport (golang regexp)",".*:9200","127.0.0.1:80.*","127.0.0.1:8484"],
-    "components":{"regex sport (golang regexp)":"name reported in es",".*:3306":"mysql","127.0.0.1:9042":"cassandra"}
+    "ignore":[".*:9200","127.0.0.1:8484"],
+    "components":{".*:3306":"mysql",".*:9042":"cassandra"}
 }

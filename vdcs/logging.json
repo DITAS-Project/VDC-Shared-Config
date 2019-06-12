@@ -1,7 +1,7 @@
 {
-    "Port":8484, 
-    "ElasticSearchURL":"{{ elasticsearch_url }}",
-    "VDCName":"VDC-Identifier used as name in elastic search",
-    "Endpoint":"address to the vdc that should be monitored (caf)",
+    "Port":8484,
+    "ElasticSearchURL":"{{.elasticsearch_url}}",
+    "VDCName":"{{.vdcId}}",
+    "Endpoint":"http://localhost:8080",
     "verbose":false
 }

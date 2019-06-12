@@ -1,5 +1,5 @@
 {
     "elasticsearch": {
-        "url": "{{ elasticsearch_url }}"
+        "url": "{{.elasticsearch_url}}"
     }
 }

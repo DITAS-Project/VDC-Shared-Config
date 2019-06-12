@@ -1,10 +1,12 @@
 {
-    "Endpoint":"address to the vdc that should be monitored (caf)",
-    "ElasticSearchURL":"{{ elasticsearch_url }}",
-    "VDCName":"VDC-Identifier used as name in elastic search",
+    "Endpoint":"http://localhost:{{.caf_port}}",
+    "ElasticSearchURL":"{{.elasticsearch_url}}",
+    "VDCName":"{{.vdcId}}",
+    "ZipkinEndpoint": "http://localhost:9411",
     "Opentracing":false,
-    "ZipkinEndpoint":"address of zipkin collector",
-    "UseSelfSigned":true,
+    "UseSelfSigned":false,
     "ForwardTraffic":false,
-    "ExchangeReporterURL":"forward endpoint all collected data traffic will be forwarded to this address"
+    "verbose":true,
+    "Authentication": true,
+    "jwkURL": "{{.keycloack_url}}/auth/realms/{{.keycloack_realm}}/protocol/openid-connect/certs"
 }
