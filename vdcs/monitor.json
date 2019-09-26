@@ -1,6 +1,10 @@
 {
     "Endpoint":"http://localhost:{{.caf_port}}",
     "ElasticSearchURL":"{{.elasticsearch_url}}",
+    "ElasticBasicAuth":"{{.elasticsearch_authenticate}}",
+    "ElasticUser":"{{.elasticsearch_user}}",
+    "ElasticPassword":"{{.elasticsearch_password}}",
+    "TombstoneSecret":"{{.tombstone_secret}}",
     "VDCName":"{{.vdcId}}",
     "ZipkinEndpoint": "http://localhost:9411",
     "Opentracing":false,
