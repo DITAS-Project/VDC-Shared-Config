@@ -1,0 +1,31 @@
+{
+	"connections": [
+		{
+			"host": {{.elasticsearch_hostname}},
+			"port": {{.elasticsearch_port}}
+		}
+	],
+	"index_qos": "tubvdc-*",
+	"index_data_quality": "tubvdc-*",
+	"availability": {
+		"queries": [
+			{
+				"query_content": "*", "update_interval": 1
+			}
+		]
+	},
+	"throughput": {
+		"queries": [
+			{
+				"query_content": "*", "update_interval": 1
+			}
+		]
+	},
+	"response_time": {
+		"queries": [
+			{
+				"query_content": "*", "update_interval": 1
+			}
+		]
+	}
+}
