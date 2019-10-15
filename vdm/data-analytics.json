@@ -1,4 +1,4 @@
 {
-    "Port":8080,
+    "Port":"{{.data_analytics_port}}",
     "ElasticSearchURL":"{{.elasticsearch_url}}"
 }
