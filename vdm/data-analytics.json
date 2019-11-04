@@ -1,4 +1,6 @@
 {
     "Port":"{{.data_analytics_port}}",
-    "ElasticSearchURL":"{{.elasticsearch_url}}"
+    "ElasticSearchURL":"{{.elasticsearch_url}}",
+    "K8sMetrics":"{{.k8s_metrics}}",
+    "RookEndpoint":"{{.rook_endpoint}}"
 }
