@@ -2,11 +2,33 @@
     "movements":
         [
             {
+                "type":"dataDuplication",
+                "fromType":"edge",
+                "toType":"cloud",
+                "restTime":"13",
+                "positiveImpacts":["serviceAvailable"],
+                "negativeImpacts":[],
+                "transformations":[],
+                "costs":
+                    [
+                        {
+                            "type":"monetary",
+                            "unit":"dollars/MB",
+                            "value":50
+                        },
+                        {
+                            "type":"time",
+                            "unit":"ms/MB",
+                            "value":0.3
+                        }
+                    ]
+            },
+            {
                 "type":"ComputationMovement",
                 "fromType":"edge",
                 "toType":"cloud",
                 "restTime":"12",
-                "positiveImpacts":["timeliness"],
+                "positiveImpacts":["fastProcess"],
                 "negativeImpacts":[],
                 "transformations":[],
                 "costs":
