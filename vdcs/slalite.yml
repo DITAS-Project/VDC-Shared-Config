@@ -1,0 +1,15 @@
+---
+vdcId: {{.vdcId}}
+infrastructureId: {{.infrastructure_id}}
+ds4m:
+  port: {{.ds4m_port}}
+testing:
+  enabled: {{.sla_testing_enabled}}
+  method: {{.sla_id}}
+  metrics:
+   availability: 97
+   timeliness: 80
+   throughtput: 1
+   precision: 1
+   accuracy: 95
+
