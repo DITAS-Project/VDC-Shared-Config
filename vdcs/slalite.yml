@@ -8,6 +8,7 @@ data_analytics:
 testing:
   enabled: {{.sla_testing_enabled}}
   method: {{.sla_id}}
+  num_violations: 1
   metrics:
    availability: 97
    timeliness: 80
