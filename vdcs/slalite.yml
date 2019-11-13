@@ -1,4 +1,5 @@
 ---
+port: {{.sla_manager_port}}
 vdcId: {{.vdcId}}
 infrastructureId: {{.infrastructure_id}}
 ds4m:
