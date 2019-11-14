@@ -14,8 +14,10 @@ testing:
   num_violations: 1
   metrics:
    availability: 97
-   timeliness: 80
+   timeliness: 95
    throughtput: 1
    precision: 1
    accuracy: 95
+   responseTime: 5
+   volume: 1500
 
