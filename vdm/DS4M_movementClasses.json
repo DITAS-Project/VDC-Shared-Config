@@ -2,51 +2,13 @@
     "movements":
         [
             {
-                "type":"DataMovement",
+                "type":"dataDuplication",
                 "fromType":"edge",
                 "toType":"cloud",
-                "restTime":"12",
-                "positiveImpacts":["fastDataStreaming","dataVolume"],
-                "negativeImpacts":["completeness"],
-                "transformations":
-                [
-                    {
-                    "type":"Encryption",
-	                "positiveImpacts":["fastDataStreaming","dataVolume"],
-	                "negativeImpacts":["completeness"],
-                    "costs":
-                        [
-                            {
-                                "type":"monetary",
-                                "unit":"dollars/MB",
-                                "value":50.0
-                            },
-                            {
-                                "type":"time",
-                                "unit":"ms/MB",
-                                "value":0.3
-                            }
-                        ]
-                    },
-                    {
-                    "type":"Aggregation",
-	                "positiveImpacts":["fastDataStreaming","dataVolume"],
-	                "negativeImpacts":["completeness"],
-                    "costs":
-                        [
-                            {
-                                "type":"monetary",
-                                "unit":"dollars/MB",
-                                "value":12.0
-                            },
-                            {
-                                "type":"time",
-                                "unit":"ms/MB",
-                                "value":0.3
-                            }
-                        ]
-                    }       
-                ],
+                "restTime":"13",
+                "positiveImpacts":["serviceAvailable"],
+                "negativeImpacts":[],
+                "transformations":[],
                 "costs":
                     [
                         {
@@ -62,57 +24,19 @@
                     ]
             },
             {
-                "type":"DataDuplication",
+                "type":"ComputationMovement",
                 "fromType":"edge",
                 "toType":"cloud",
-                "positiveImpacts":["serviceAvailable","fastDataProcess"],
-                "negativeImpacts":["fastDataStreaming","dataVolume"],
-                "restTime":"15",
-                "transformations":
-                [
-                    {
-                    "type":"Encryption",
-	                "positiveImpacts":["serviceAvailable","fastDataProcess"],
-	                "negativeImpacts":["fastDataStreaming","dataVolume"],
-                    "costs":
-                        [
-                            {
-                                "type":"monetary",
-                                "unit":"dollars/MB",
-                                "value":12.0
-                            },
-                            {
-                                "type":"time",
-                                "unit":"ms/MB",
-                                "value":0.3
-                            }
-                        ]
-                    },
-                    {
-                    "type":"Aggregation",
-	                "positiveImpacts":["serviceAvailable","fastDataProcess"],
-	                "negativeImpacts":["fastDataStreaming","dataVolume"],
-                    "costs":
-                        [
-                            {
-                                "type":"monetary",
-                                "unit":"dollars/MB",
-                                "value":12.0
-                            },
-                            {
-                                "type":"time",
-                                "unit":"ms/MB",
-                                "value":0.3
-                            }
-                        ]
-                    }       
-                ],
+                "restTime":"12",
+                "positiveImpacts":["fastProcess"],
+                "negativeImpacts":[],
+                "transformations":[],
                 "costs":
                     [
                         {
                             "type":"monetary",
                             "unit":"dollars/MB",
-                            "value":12.0
+                            "value":50
                         },
                         {
                             "type":"time",

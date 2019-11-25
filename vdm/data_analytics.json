@@ -1,0 +1,8 @@
+{
+    "Port":"{{.data_analytics_port}}",
+    "ElasticSearchURL":"{{.elasticsearch_url}}",
+    "TraefikPort":"{{.traefik_external_port}}",
+    "elasticsearch_authenticate": {{.elasticsearch_authenticate}},
+    "elasticsearch_user": "{{.elasticsearch_user}}",
+    "elasticsearch_password": "{{.elasticsearch_password}}"
+}

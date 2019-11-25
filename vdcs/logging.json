@@ -1,5 +1,5 @@
 {
-    "Port":8484,
+    "Port":{{.logging_agent_port}},
     "ElasticSearchURL":"{{.elasticsearch_url}}",
     "VDCName":"{{.vdcId}}",
     "Endpoint":"http://localhost:8080",

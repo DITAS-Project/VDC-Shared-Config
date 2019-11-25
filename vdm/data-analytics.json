@@ -1,4 +1,0 @@
-{
-    "Port":"{{.data_analytics_port}}",
-    "ElasticSearchURL":"{{.elasticsearch_url}}"
-}

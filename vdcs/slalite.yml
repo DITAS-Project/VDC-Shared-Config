@@ -1,0 +1,23 @@
+---
+port: {{.sla_manager_port}}
+vdcId: {{.vdcId}}
+infrastructureId: {{.infrastructure_id}}
+ds4m:
+  port: {{.ds4m_port}}
+data_analytics:
+  url: http://vdm:{{.data_analytics_external_port}}/data-analytics/meter/{{.infrastructure_id}}/
+debug:
+  trace_http: false
+testing:
+  enabled: {{.sla_testing_enabled}}
+  method: {{.sla_id}}
+  num_violations: 1
+  metrics:
+   availability: 97
+   timeliness: 95
+   throughtput: 1
+   precision: 1
+   accuracy: 95
+   responseTime: 5
+   volume: 1500
+
