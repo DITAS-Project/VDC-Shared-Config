@@ -1,7 +1,13 @@
 {
-    "Port":{{.logging_agent_port}},
-    "ElasticSearchURL":"{{.elasticsearch_url}}",
     "VDCName":"{{.vdcId}}",
-    "Endpoint":"http://localhost:8080",
-    "verbose":false
+    "Endpoint":"http://localhost:{{.caf_port}}",
+    "Port":"{{.logging_agent_port}}",
+    "verbose":true,
+    "waitTime": 10,
+    "ElasticSearchURL":"{{.elasticsearch_url}}",
+    "ElasticBasicAuth": "{{.elasticsearch_authenticate}}",
+    "ElasticUser": "{{.elasticsearch_user}}",
+    "ElasticPassword": "{{.elasticsearch_password}}",
+    "IgnoreElastic": false,
+    "tracing": false
 }
