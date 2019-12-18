@@ -1,0 +1,9 @@
+
+
+resultFullPath: TESDataItemsDemo_result
+
+
+isDebugPrint: false
+connectionsConfigFile: "connections-DITAS-10000.yml"
+s3ProtocolName: s3a
+
