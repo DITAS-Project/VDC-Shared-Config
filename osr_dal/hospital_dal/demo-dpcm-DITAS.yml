@@ -4,6 +4,6 @@ resultFullPath: TESDataItemsDemo_result
 
 
 isDebugPrint: false
-connectionsConfigFile: "/etc/ditas/connections-DITAS-10000_pub.yml"
+connectionsConfigFile: "/etc/ditas/connections-DITAS-10000.yml"
 s3ProtocolName: s3a
 

@@ -13,6 +13,7 @@ policyEnforcementUrl: "http://localhost:{{.policy_enforcement_port}}/rewrite-sql
 
 
 jwtServerTimeout: 5000 #milliseconds
+#jwksServerEndpoint: https://153.92.30.56:58080/auth/realms/288/protocol/openid-connect/certs
 jwksServerEndpoint: {{.keycloack_url}}/auth/realms/{{.keycloack_realm}}/protocol/openid-connect/certs
 jwksCheckServerCertificate: false
 
