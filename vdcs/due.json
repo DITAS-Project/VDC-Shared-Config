@@ -12,21 +12,21 @@
 	"availability": {
 		"queries": [
 			{
-				"query_content": "*", "update_interval": 1
+				"query_content": "*", "update_interval": 60
 			}
 		]
 	},
 	"throughput": {
 		"queries": [
 			{
-				"query_content": "*", "update_interval": 1
+				"query_content": "*", "update_interval": 60
 			}
 		]
 	},
 	"response_time": {
 		"queries": [
 			{
-				"query_content": "*", "update_interval": 1
+				"query_content": "*", "update_interval": 60
 			}
 		]
 	}
