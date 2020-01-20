@@ -2,7 +2,7 @@
     "movements":
         [
             {
-                "type":"dataDuplication",
+                "type":"ComputationMovement",
                 "fromType":"edge",
                 "toType":"cloud",
                 "restTime":"13",

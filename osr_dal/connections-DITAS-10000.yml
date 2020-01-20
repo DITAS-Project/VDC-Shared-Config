@@ -1,0 +1,14 @@
+s3Sources:
+ -
+   #name should be unique it is the same as the name that will be used
+   #in createTmpView and select query
+   name: consent
+   endpoint: "{{.minio_endpoint}}"
+   accessKey: "{{.minio_access_key}}"
+   secretKey: "{{.minio_secret_key}}"
+   pathStyleAccess: "true"
+   impl: "org.apache.hadoop.fs.s3a.S3AFileSystem"
+   abstractFileSystem_s3a_impl: "org.apache.hadoop.fs.s3a.S3A"
+   s3_filename: "s3a://ditas.dummy-example/consents.Consents10000Demo"
+   protocolName: s3a
+   db_table: consents.DPCMConsentsDemo

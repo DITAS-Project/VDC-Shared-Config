@@ -1,0 +1,85 @@
+s3Sources:
+ -
+   #name should be unique it is the same as the name that will be used
+   #in createTmpView and select query
+   name: blood_tests
+   endpoint: "{{.minio_endpoint}}"
+   accessKey: "{{.minio_access_key}}"
+   secretKey: "{{.minio_secret_key}}"
+   pathStyleAccess: "true"
+   impl: "org.apache.hadoop.fs.s3a.S3AFileSystem"
+   abstractFileSystem_s3a_impl: "org.apache.hadoop.fs.s3a.S3A"
+   s3_filename: "s3a://ditas.dummy-example/documents-10000.parquet"
+   protocolName: s3a
+   db_table: blood-tests-20.parquet
+
+ -
+   #name should be unique it is the same as the name that will be used
+   #in createTmpView and select query
+   name: blood_tests_clauses
+   endpoint: "{{.minio_endpoint}}"
+   accessKey: "{{.minio_access_key}}"
+   secretKey: "{{.minio_secret_key}}"
+   pathStyleAccess: "true"
+   impl: "org.apache.hadoop.fs.s3a.S3AFileSystem"
+   abstractFileSystem_s3a_impl: "org.apache.hadoop.fs.s3a.S3A"
+   s3_filename: "s3a://ditas.dummy-example/blood_tests_10000.clausesDemo"
+   protocolName: s3a
+   db_table: blood_tests_10000.clausesDemo
+
+ -
+   #name should be unique it is the same as the name that will be used
+   #in createTmpView and select query
+   name: blood_tests_rules
+   endpoint: "{{.minio_endpoint}}"
+   accessKey: "{{.minio_access_key}}"
+   secretKey: "{{.minio_secret_key}}"
+   pathStyleAccess: "true"
+   impl: "org.apache.hadoop.fs.s3a.S3AFileSystem"
+   abstractFileSystem_s3a_impl: "org.apache.hadoop.fs.s3a.S3A"
+   s3_filename: "s3a://ditas.dummy-example/blood_tests_10000.rulesDemo"
+   protocolName: s3a
+   db_table: blood_tests_10000.rulesDemo
+ -
+   #name should be unique it is the same as the name that will be used
+   #in createTmpView and select query
+   name: consent
+   endpoint: "{{.minio_endpoint}}"
+   accessKey: "{{.minio_access_key}}"
+   secretKey: "{{.minio_secret_key}}"
+   pathStyleAccess: "true"
+   impl: "org.apache.hadoop.fs.s3a.S3AFileSystem"
+   abstractFileSystem_s3a_impl: "org.apache.hadoop.fs.s3a.S3A"
+   s3_filename: "s3a://ditas.dummy-example/consents.backup.Consents10000Demo/"
+   protocolName: s3a
+   db_table: consents.DPCMConsentsDemo
+
+
+jdbcSources:
+ -
+   name: patientsProfiles
+   password: {{.mysql_password}}
+   username: {{.mysql_username}}
+   hostname: {{.mysql_hostname}}
+   db_name: ditas_dummy_example
+   db_table: patient
+   driver_type: mysql
+
+ -
+   name: patientsProfiles_clauses
+   password: {{.mysql_password}}
+   username: {{.mysql_username}}
+   hostname: {{.mysql_hostname}}
+   db_name: ditas_dummy_example
+   db_table: patient10000_clausesDemo
+   driver_type: mysql
+
+ -
+   name: patientsProfiles_rules
+   password: {{.mysql_password}}
+   username: {{.mysql_username}}
+   hostname: {{.mysql_hostname}}
+   db_name: ditas_dummy_example
+   db_table: patient10000_rulesDemo
+   driver_type: mysql
+

@@ -1,0 +1,30 @@
+debugMode: true
+sparkHadoopF3S3AConfig:
+ spark.hadoop.fs.s3a.endpoint: "{{.minio_endpoint}}"
+ spark.hadoop.fs.s3a.access.key: "{{.minio_access_key}}"
+ spark.hadoop.fs.s3a.secret.key: "{{.minio_secret_key}}"
+ spark.hadoop.fs.s3a.path.style.access: "true"
+ spark.hadoop.fs.s3a.impl: "org.apache.hadoop.fs.s3a.S3AFileSystem"
+ spark.hadoop.fs.AbstractFileSystem.s3a.impl: "org.apache.hadoop.fs.s3a.S3A"
+ s3.filename: "s3a://ditas.dummy-example/ditas-blood-tests.parquet"
+
+
+policyEnforcementUrl: "http://localhost:{{.policy_enforcement_port}}/rewrite-sql-query"
+
+
+jwtServerTimeout: 5000 #milliseconds
+jwksServerEndpoint:  {{.keycloack_url}}/auth/realms/{{.keycloack_realm}}/protocol/openid-connect/certs # OSR
+# IDEKO https://153.92.30.56:58080/auth/realms/288/protocol/openid-connect/certs
+jwksCheckServerCertificate: false
+
+
+showDataFrameLength: 10
+
+dataTables:
+ blood_tests: "s3a://ditas.dummy-example/documents-10000.parquet_mv.encrypted"
+
+dataTablesTypes:
+ blood_tests_type: s3a
+
+
+port: 50055

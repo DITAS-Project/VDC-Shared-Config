@@ -6,7 +6,7 @@ infrastructureId: {{.infrastructure_id}}
 ds4m:
   port: {{.ds4m_port}}
 data_analytics:
-  url: http://vdm:{{.data_analytics_external_port}}/data-analytics/meter/{{.infrastructure_id}}/
+  url: http://vdm:{{.data_analytics_external_port}}/data-analytics/meter/{{.vdcId}}/
 debug:
   trace_http: false
 testing:
